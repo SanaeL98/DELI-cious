@@ -15,13 +15,22 @@ This is a custom sandwich ordering system built in Java using object-oriented pr
 
 ## Interesting Code
 ```java
-public void calculatePrice() {
-    double total = basePrice;
-    for (Topping topping : toppings) {
-        total += topping.getPrice();
+  public double calculatePrice() {
+        double basePrice;
+
+        switch (size.toLowerCase()) {
+            case "small" -> basePrice = 5.00;
+            case "medium" -> basePrice = 6.50;
+            case "large" -> basePrice = 8.00;
+            default -> basePrice = 6.00; // default fallback
+        }
+
+        for (Topping topping : toppings) {
+            basePrice += topping.getPrice();
+        }
+
+        return basePrice;
     }
-    this.price = total;
-}
 
 
 
