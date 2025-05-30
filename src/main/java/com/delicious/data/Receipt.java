@@ -1,7 +1,7 @@
 package com.delicious.data;
 
 import com.delicious.model.*;
-import com.delicious.order.Order;
+import com.delicious.model.Order;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
