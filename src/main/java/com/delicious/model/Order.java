@@ -1,4 +1,4 @@
-package com.delicious.order;
+package com.delicious.model;
 
 import com.delicious.model.*;
 
@@ -23,8 +23,8 @@ public class Order {
     }
 
     public double calculateTotal() {
-        double total = 0;
-        for (Sandwich s : sandwiches) {
+        double total = 0;  //initializes a variable to keep track of the full cost of the customer's order
+        for (Sandwich s : sandwiches) {  // adds each sandwich's full custom price
             total += s.calculatePrice();
         }
         for (Drink d : drinks) {
@@ -33,7 +33,7 @@ public class Order {
         for (Chips c : chips) {
             total += c.getPrice();
         }
-        return total;
+        return total;  // gives back the final cost
     }
 
     public List<Sandwich> getSandwiches() {

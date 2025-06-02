@@ -33,4 +33,8 @@ public class TestOrder {
         Receipt receipt = new Receipt(order);
         receipt.printReceipt();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4510970 (DELI-cious)

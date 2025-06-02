@@ -1,7 +1,7 @@
 package com.delicious.ui;
 
 import com.delicious.model.*;
-import com.delicious.order.Order;
+import com.delicious.model.Order;
 import com.delicious.data.Receipt;
 
 import java.util.Scanner;
@@ -55,6 +55,7 @@ public class UserInterface {
                 case 5 -> {
                     System.out.println("Order completed.");
                     new Receipt(order).printReceipt();
+                    Receipt.saveOrderToFile(order);
                     ordering = false;
                 }
                 default -> System.out.println("Invalid choice.");
@@ -71,7 +72,7 @@ public class UserInterface {
             case "12" -> "Large";
             default -> {
                 System.out.println("Invalid size. Defaulting to Medium.");
-                yield "Medium";
+                yield "Medium";  //yield is used inside a switch expression to give back a result
             }
         };
 
@@ -180,7 +181,7 @@ public class UserInterface {
         System.out.println("Chips added!");
     }
 
-    private boolean askYesNo(String prompt) {
+    private boolean askYesNo(String prompt) {   // utility method used to get a yes/no from the user
         System.out.print(prompt + " (yes/no): ");
         String input = scanner.nextLine().trim().toLowerCase();
         return input.equals("yes");

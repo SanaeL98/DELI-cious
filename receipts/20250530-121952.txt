@@ -1,0 +1,15 @@
+===== DELI-cious Receipt =====
+
+Order Date/Time: 05/30/2025 at 12:19 PM
+
+Sandwich: White Bread, size Large, toasted: false
+Meat: Chicken
+Toppings: Onions
+Cheese: Provolone
+Subtotal: $12.00
+
+Chips: bbq - $1.50
+Drink: Medium tea - $2.50
+
+Total: $16.00
+==============================

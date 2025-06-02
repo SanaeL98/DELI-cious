@@ -1,12 +1,14 @@
 package com.delicious.model;
 
-public class CustomSandwich extends Sandwich {
+public class CustomSandwich extends Sandwich {   //inherits from the sandwich class
 
+
+    //Constructor
     public CustomSandwich(String size, String bread, boolean toasted) {
         super(size, bread, toasted);
     }
 
-    @Override
+    @Override  // replacing the method from the parent class 
     public double calculatePrice() {
         double basePrice;
 

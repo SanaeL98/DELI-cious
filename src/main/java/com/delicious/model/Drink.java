@@ -5,6 +5,7 @@ public class Drink {
     private String size;
     private boolean extra;
 
+    //Constructor
     public Drink(String flavor, String size, boolean extra) {
         this.flavor = flavor;
         this.size = size;
@@ -24,7 +25,7 @@ public class Drink {
         return flavor;
     }
 
-    public String getSize() {
+    public String getSize() {                      // provide access to the drink's details when printing receipt or calculating the total
         return size;
     }
 
