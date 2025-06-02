@@ -1,10 +1,8 @@
 package com.delicious.data;
 
 import com.delicious.model.*;
-<<<<<<< HEAD
+
 import com.delicious.model.Order;
-=======
->>>>>>> 4510970 (DELI-cious)
 
 import java.io.BufferedWriter;
 import java.io.File;
